@@ -1,0 +1,14 @@
+<h1 class="a" style="color: gold;"> "Travel is never a matter of money but of courage." </h1>
+<h3 class="b" style="color: gold">— Paulo Coelho</h3>
+
+<div></div>
+<owl-carousel-o [options]="customOptions">
+
+  <ng-container *ngFor="let slide of slidesStore">
+    <ng-template carouselSlide [id]="slide.id.toString()">
+      <img  class="im"[src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
+<div></div>
